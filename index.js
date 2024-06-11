@@ -14,8 +14,8 @@ app.get('/', (req, res) => {
   res.send('BotGhost Removed!');
 });
 app.listen(port, () => {
-  console.log(`🔗 Listening to Robin NTW : http://localhost:${port}`);
-  console.log(`🔗 Powered By Robinayush`);
+  console.log(`🔗 Server Linked! : http://localhost:${port}`);
+  console.log(`🔗 Website Active.`);
 });
 
 
@@ -28,7 +28,7 @@ const channelId = '';
 async function login() {
   try {
     await client.login(process.env.TOKEN);
-    console.log(`\x1b[36m%s\x1b[0m`, `|  ✅ Logged in as ${client.user.tag}`);
+    console.log(`\x1b[36m%s\x1b[0m`, `|  Logged into ${client.user.tag}`);
   } catch (error) {
     console.error('Failed to log in:', error);
     process.exit(1);
@@ -61,8 +61,8 @@ function updateStatusAndSendMessages() {
 }
 
 client.once('ready', () => {
-  console.log(`\x1b[36m%s\x1b[0m`, `|    ✅ Bot is ready as ${client.user.tag}`);
-  console.log(`\x1b[36m%s\x1b[0m`, `|    💉 Status Changing Code Injected Succesfully`);
+  console.log(`\x1b[36m%s\x1b[0m`, `|    Bot Is Ready. ${client.user.tag}`);
+  console.log(`\x1b[36m%s\x1b[0m`, `|    Bot Is Now Up.`);
   updateStatusAndSendMessages();
 
   setInterval(() => {
