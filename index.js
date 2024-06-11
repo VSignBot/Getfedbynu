@@ -11,7 +11,7 @@ const client = new Client({
 const app = express();
 const port = 3000;
 app.get('/', (req, res) => {
-  res.send('BotGhost Removed!');
+  res.send('Bynu is coming.');
 });
 app.listen(port, () => {
   console.log(`🔗 Server Linked! : http://localhost:${port}`);
